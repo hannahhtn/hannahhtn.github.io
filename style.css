@@ -41,35 +41,55 @@ a
     text-decoration: none;
 }
 
-#navbar a:hover, .resume:hover
+#navbar a:hover, #socialm a:hover, .resume:hover
 {
     opacity: 0.5;
 }
 
-
-.name
+#aboutme
 {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:lightslategray;
+    padding-top: 100px;
+}
+
+#my-pic
+{
+    padding-left: 250px;
+    float: left;
+    padding-right: 50px;
+}
+
+.intro
+{
+    font-family: 'Hubballi';
+    color: white;
+    display: block;
+    width: 80%;
 }
 
 .resume
 {
     font-family: 'Akaya Telivigala';
-    color: white;
+    color:darkgrey;
 }
 
-#connect
+#socialm
 {
-    list-style: none;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
+    background-color: #ecddd3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
 }
 
-#connect li
+#socialm a
 {
-    display: inline-block;
     padding-right: 50px;
+    transition: 0.5s;
 }
 
+#socialm a:hover
+{
+    position: relative; 
+    top: -5px;
+}
