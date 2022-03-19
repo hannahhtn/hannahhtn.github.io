@@ -3,26 +3,81 @@
    <title>Hannah Ho</title>
    <link href="./style.css" rel="stylesheet">
    <link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
- </head>
- 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
 <header>
   <img class="hhlogo"src="./hhlogo.png">
-  <ul class="navbar">
-    <li><a href="#aboutme">About Me</a></li>
-    <li><a href="#projects">Project</a></li>
-    <li><a href="#connect">Connect</a></li>
-  </ul>
+  <div id="navbar">
+    <a href="#aboutme">About Me</a>
+    <a href="#projects">Project</a>
+    <a href="#connect">Connect</a>
+  </div>
 </header>
 
 <body>
-  <h1 id="aboutme">
-    <!-- <p>Welcome to my porfolio! My name is Hannah Ho. I'm a software engineer</p> -->
-  </h1>
+  <h1 id="aboutme">something in between</h1>
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
+  <img src="./me.jpg">
   <h1 id="projects">
   </h1>
-  <h1 id="connect">
-    <!-- <p>email: hannahhtn97@gmail.com | phone: 000000000 </p> -->
-  </h1>
+
+  <ul id="connect">
+    <li>
+      <a target="_blank" href="https://www.linkedin.com/in/hannah-ho-7761a7b4/">
+        <i class='fa fa-linkedin' style='color: white; font-size:24px'></i>
+      </a>
+    </li>
+
+    <li>
+      <a target="_blank" href="https://github.com/hannahhtn">
+        <i class='fa fa-github' style='color: white; font-size:24px'></i>
+      </a>
+    </li>
+
+    <li>
+      <h3>
+        <a href="./HH-Resume.pdf" class="resume" download>Resume</a>
+      </h3>
+    </li>
+  </ul>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    var stopscrolling = 20;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if(currentScrollPos < stopscrolling)
+      {
+        document.getElementById("navbar").style.top = "80px";
+      }  
+      else if(prevScrollpos > currentScrollPos)
+      {
+        document.getElementById("navbar").style.top = "0px";
+      }
+      else 
+      {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+
 </body>
  
 </html>

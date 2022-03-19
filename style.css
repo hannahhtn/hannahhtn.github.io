@@ -1,37 +1,47 @@
 header
 {
     background-color: white;
-    height: 80px;
+    height: 100px;
 }
 
 body{
-    background-color: #F2ECE8;
+    background-color: #ecddd3;
+    margin-top: auto;
 }
 
-.navbar 
+.hhlogo
 {
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.navbar li{
-    display:inline;
+#navbar 
+{
+    background-color: #ecddd3;
+    position:fixed;
+    width: 100%;
+    transition: top 0.3s;
+    text-align: center;
 }
 
-.navbar a {
+#navbar a {
     font-family: 'Akaya Telivigala';
     color: white;
-    text-align: left;
-    padding: 20px;
+    padding: 10px 20px;
     font-size: 20px;
     display: inline-block;
-    text-decoration: none;
     font-weight: lighter;
 }
 
-.navbar a:hover
+a
+{
+    text-decoration: none;
+}
+
+#navbar a:hover, .resume:hover
 {
     opacity: 0.5;
 }
@@ -43,11 +53,23 @@ body{
     color:lightslategray;
 }
 
-.hhlogo
+.resume
 {
-    width: 80px;
-    height: 80px;
-    display: block;
+    font-family: 'Akaya Telivigala';
+    color: white;
+}
+
+#connect
+{
+    list-style: none;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
+
+#connect li
+{
+    display: inline-block;
+    padding-right: 50px;
+}
+
