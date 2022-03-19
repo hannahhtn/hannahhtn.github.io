@@ -1,0 +1,53 @@
+header
+{
+    background-color: white;
+    height: 80px;
+}
+
+body{
+    background-color: #F2ECE8;
+}
+
+.navbar 
+{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+.navbar li{
+    display:inline;
+}
+
+.navbar a {
+    font-family: 'Akaya Telivigala';
+    color: white;
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.navbar a:hover
+{
+    opacity: 0.5;
+}
+
+
+.name
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:lightslategray;
+}
+
+.hhlogo
+{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
