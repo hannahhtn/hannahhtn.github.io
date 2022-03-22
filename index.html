@@ -1,10 +1,11 @@
 <html>
  <head>
-   <title>Hannah Ho</title>
-   <link href="./style.css" rel="stylesheet">
-   <link href='https://fonts.googleapis.com/css?family=Hubballi' rel='stylesheet'>
-   <link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hannah Ho</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Hubballi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
 <header>
@@ -17,33 +18,32 @@
 </header>
 
 <body>
-  <h1 id="aboutme">
-    <img id="my-pic" src="./me.jpg">
-    <h3 class="intro">
-      Welcome to my portfolio! My name is Hannah and I'm a software engineer.
-      I'm currently looking for a SWE postion with a back-end focus. Please checkout
-      some of my personal projects if you're interested! Also don't foget to save a 
-      copy of my <a href="./HH-Resume.pdf" class="resume" download>resume</a> on your way out. Thank you :)
-    </h3>
-  </h1>
-  
-  <h1 id="projects">
-    <img src="./hhlogo.png" style="height: 1000px; width: 1000px;">
-  </h1>
-
-  <h1 id="connect">
-    <div id="socialm">
-      <a target="_blank" href="https://www.linkedin.com/in/hannah-ho-7761a7b4/">
-        <i class='fa fa-linkedin' style='color: white; font-size:35px'></i>
-      </a>
-
-      <a target="_blank" href="https://github.com/hannahhtn">
-        <i class='fa fa-github' style='color: white; font-size:35px'></i>
-      </a>
-
-      <a href="./HH-Resume.pdf" class="resume" download>Resume</a>
+  <div class='aboutme'>
+    <div id="intro">
+      <h3>
+        Welcome to my portfolio! My name is Hannah and I'm a software engineer.
+        I'm currently looking for a SWE postion with a back-end focus. Please checkout
+        some of my personal projects if you're interested! Also don't foget to save a 
+        copy of my <a href="./HH-Resume.pdf" class="resume" download>resume</a> on your way out. Thank you :)
+      </h3>
     </div>
-  </h1>
+    <div id="img-container">
+      <img src="./me.jpg">
+    </div>
+  </div>
+  
+  <div id="projects">
+  </div>
+
+  <div id="connect">
+    <a target="_blank" href="https://www.linkedin.com/in/hannah-ho-7761a7b4/">
+      <i class='fa fa-linkedin' style='color: white; font-size:35px'></i>
+    </a>
+    <a target="_blank" href="https://github.com/hannahhtn">
+      <i class='fa fa-github' style='color: white; font-size:35px'></i>
+    </a>
+    <a href="./HH-Resume.pdf" class="resume" download>Resume</a>
+  </div>
 
   <script>
     var prevScrollpos = window.pageYOffset;

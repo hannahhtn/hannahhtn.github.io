@@ -1,7 +1,7 @@
 header
 {
     background-color: white;
-    height: 100px;
+    width: 100%;
 }
 
 body{
@@ -11,8 +11,8 @@ body{
 
 .hhlogo
 {
-    width: 80px;
-    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -41,29 +41,44 @@ a
     text-decoration: none;
 }
 
-#navbar a:hover, #socialm a:hover, .resume:hover
+#navbar a:hover, #connect a:hover, .resume:hover
 {
     opacity: 0.5;
 }
 
-#aboutme
+.aboutme
 {
-    padding-top: 100px;
+    padding-top: 150px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden;
 }
 
-#my-pic
+#img-container
 {
-    padding-left: 250px;
-    float: left;
-    padding-right: 50px;
+    overflow: hidden;
 }
 
-.intro
+#img-container img
+{
+    width: 100%;
+    min-width: 100px;
+    height: auto;
+    display: block;
+}
+
+#intro
 {
     font-family: 'Hubballi';
     color: white;
-    display: block;
-    width: 80%;
+    font-size: 1em;
+    text-align: center;
+    width: 90%;
+    min-width: 400px;
+    padding-right: 5%;
 }
 
 .resume
@@ -72,24 +87,51 @@ a
     color:darkgrey;
 }
 
-#socialm
+#connect
 {
-    text-align: center;
     background-color: #ecddd3;
     position: fixed;
     bottom: 0;
     width: 100%;
     padding: 15px;
+    display: flex;
+    justify-content: center;
 }
 
-#socialm a
+#connect a
 {
     padding-right: 50px;
     transition: 0.5s;
 }
 
-#socialm a:hover
+#connect a.resume
+{
+    padding-top: 5px;
+    font-size: x-large;
+}
+
+#connect a:hover
 {
     position: relative; 
     top: -5px;
+}
+
+@media (max-width: 1200px) 
+{
+.aboutme
+{
+    padding-top: 150px;
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#intro
+{
+    font-family: 'Hubballi';
+    color: white;
+    font-size: 1em;
+    min-width: 200px;
+}
 }
