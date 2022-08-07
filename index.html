@@ -1,76 +1,90 @@
-<html>
- <head>
-    <title>Hannah Ho</title>
-    <link href="./style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Hubballi' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-
-<header>
-  <img class="hhlogo"src="./hhlogo.png">
-  <div id="navbar">
-    <a href="#abme">About Me</a>
-    <a href="#projects">Project</a>
-    <a href="#connect">Connect</a>
-  </div>
-</header>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <title>Hannah Ho</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
 <body>
-  <h1 class="sections" id="abme">...About me...</h1>
-  <div class='aboutme'>
-    <div id="intro">
-      <h3>
-        Welcome to my portfolio! My name is Hannah and I'm a software engineer.
-        I'm currently looking for a SWE job position. Please checkout
-        some of my personal projects if you're interested! Also don't foget to save a 
-        copy of my <a href="./HH-Resume.pdf" class="resume" download>resume</a> on your way out. Thank you :)
-      </h3>
-    </div>
-    <div id="img-container">
-      <!-- <img src="./me.jpg"> -->
+  <div class="about-me white-text" id="about-section">
+    <nav class="side-bar">
+      <div>
+        <h1 class="animate__animated animate__bounceIn">Hannah Ho</h1>
+      </div>
+      <ul class="nav-bar">
+        <li><a href="#about-section">About me</a> </li>
+        <li><a href="#skillset">Skills </a></li>
+        <li><a href="#projects-section">Projects </a></li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <div class="center-info">
+      <ul data-aos="fade-right" class="list">
+        <li>Hi there! I'm Hannah.</li>
+        <li>I'm an engineer and self-taught front end developer.</li>
+        <li>I'm currently looking for a fulltime position so please reach out if 
+          you would like to connect :)</li>
+      </ul>
     </div>
   </div>
-  
-  <div id="projects">
-    <h1 class="sections" id="per-pro">...Personal Projects...</h1>
+
+  <div class="skills" id="skillset" data-aos="fade-left">
+    <div class="skills-list">
+      <!-- <p>Languages: HTML, CSS, JS, C++, Java.</p>
+      <p>Frameworks: React, Milligrams, Bootstrap.</p> -->
+      <p></p>
+    </div>
   </div>
 
-  <footer id="connect">
-     <a target="_blank" href="https://www.linkedin.com/in/hannah-ho-7761a7b4/">
-      <i class='fa fa-linkedin' style='color: white; font-size:35px'></i>
-    </a>
-    <a target="_blank" href="https://github.com/hannahhtn">
-      <i class='fa fa-github' style='color: white; font-size:35px'></i>
-    </a>
-    <a href="./HH-Resume.pdf" class="resume" download>Resume</a>
-  </footer>
 
+  <div class="projects white-text" id="projects-section">
+    <div class="projects-title">
+      <h2>Personal Projects</h2>
+    </div>
+    <div class="projects-list">
+      <div>
+        <img class="card-img" src="tip-cal.png">
+        <p class="card-describtion white-text">
+          <a target="_blank" class="bold-text" href="https://hannahhtn.github.io/tipcalculator/">Tip Calculator</a>
+          app is a great tool for when you go out to eat with friends/family. You can even customize the tip amount
+          and it will take care of everything else.
+        </p>
+      </div>
+      <div>
+        <img class="card-img" src="advice-generator-app.png">
+        <p class="card-describtion white-text">
+          <a target="_blank" class="bold-text" href="https://hannahhtn.github.io/advice-generator-app/">Advice Generator App</a>
+          will give you randomly generated daily advice to uplift your day.
+        </p>
+      </div>
+      <div>
+        <img class="card-img" src="todo-app.png">
+        <p class="card-describtion white-text">
+          <a target="_blank" class="bold-text" href="https://hannahhtn.github.io/todoapp/">Todo List</a>
+          is the perfect reminder to keep you on top of your busy schedule. It has morning + night mode background and options for 
+          you to make changes to your list.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    var prevScrollpos = window.pageYOffset;
-    var stopscrolling = 20;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-      if(currentScrollPos < stopscrolling)
-      {
-        document.getElementById("navbar").style.top = "80px";
-      }  
-      else if(prevScrollpos > currentScrollPos)
-      {
-        document.getElementById("navbar").style.top = "0px";
-      }
-      else 
-      {
-        document.getElementById("navbar").style.top = "-50px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-
-    history.scrollRestoration = "manual";
-    </script>
-
+    AOS.init();
+  </script>
 </body>
- 
 </html>
