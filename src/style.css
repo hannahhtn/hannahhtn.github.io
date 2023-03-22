@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    color:rgb(79, 83, 133)
+}
+
+.bold {
+    font-weight: bolder
+}
+
+.orange{
+    color: #e67c6a;
+}
+
+.navbar-nav{
+    width: 100%;
+    justify-content:center;
+}
+
+.navbar-nav li a{
+    margin-right: 2rem;
+    color:rgb(79, 83, 133);
+}
+
+.navbar-nav li a:hover{
+    color:#e67c6a;
+    animation: headShake;
+    animation-duration: 1s;
+    text-shadow: 0 0 1rem;
+}
+
+.intro p a {
+    text-decoration: none;
+}
+
+.intro p a strong:hover{
+    color:#e67c6a;
+    animation: headShake;
+    animation-duration: 1s;
+    text-shadow: 0 0 1rem;
+}
+
+.home {
+    margin-top: 4rem;
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+
+.intro {
+    max-width: 25rem;
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+    animation: fadeInLeft;
+    animation-duration: 2s;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-family: 'Dosis', sans-serif;
+    
+}
+
+h1, a, p{
+    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Sono', sans-serif;    
+}
+
+.intro h1{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.intro h2{
+    margin: 0;
+    font-weight: bold;
+}
+
+.intro div{
+    display: flex;
+    gap: 1rem;
+}
+
+.about-me {
+    background: #fcd7d1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+
+.info{
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    align-items:flex-start;
+    padding-bottom: 2rem;
+}
+
+.years-exp{
+    text-align: left;
+    margin: 0;
+}
+
+.college{
+    text-align: center;
+    margin: 0;
+}
+
+.degree{
+    text-align: right;
+}
+
+.degree p, .years-exp p, .college p{
+    margin: 0;
+    width: 10rem;
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+.about-me .hire-me-btn {
+    width: 15rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color:rgb(79, 83, 133);
+    border-color: rgb(79, 83, 133);
+    border-radius: 2rem;
+    border-width: 0.2rem;
+    transition: color 0.5s;
+    transition: border-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.about-me .hire-me-btn:hover {
+    border-color: #e67c6a;
+    background-color: #e67c6a;
+    color: white;
+    
+}
+
+.spacer {
+    background-image: url(../public/layered-waves-haikei.svg);
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+
+.home {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+
+.info{
+    gap: 5rem;
+}
+}
+
+@media only screen and (max-width: 720px) {
+
+.home {
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+.about-me {
+    /* background: url(../public/wave_background_sm.png); */
+    /* background-repeat: no-repeat; */
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.years-exp, .degree{
+    text-align: center;
+}
+}
