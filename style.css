@@ -171,11 +171,11 @@ h1, a, p, form{
 }
 
 .white_pink{
-    background-image: url(../public/layered-waves-haikei.svg);
+    background-image: url(./layered-waves-haikei.svg);
 }
 
 .pink_white {
-    background-image: url(../public/layered-waves-haikei_reverse.svg);
+    background-image: url(./layered-waves-haikei_reverse.svg);
 }
 
 .projects{
