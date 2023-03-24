@@ -12,9 +12,13 @@
     color: #e67c6a;
 }
 
+nav img{
+    width: 5rem;
+}
+
 .navbar-nav{
     width: 100%;
-    justify-content:center;
+    justify-content: end;
 }
 
 .navbar-nav li a{
@@ -29,7 +33,7 @@
     text-shadow: 0 0 1rem;
 }
 
-a, .projects a{
+a, .intro a, .about-me a,.projects a{
     text-decoration: none;
 }
 
@@ -41,7 +45,7 @@ a, .projects a{
 }
 
 .home {
-    margin-top: 4rem;
+    margin-top: 8rem;
     display: flex;
     gap: 6rem;
     align-items: center;
@@ -67,10 +71,11 @@ a, .projects a{
 
 h2{
     font-family: 'Dosis', sans-serif;
+    filter: brightness(1.45);
     
 }
 
-h1, a, p{
+h1, a, p, form{
     font-family: 'Signika Negative', sans-serif;
     font-family: 'Sono', sans-serif;    
 }
@@ -126,7 +131,7 @@ h1, a, p{
     animation-duration: 2s;
 }
 
-.about-me .hire-me-btn, .projects .chckout-btn {
+.about-me .hire-me-btn, .projects .chckout-btn, .submit-btn{
     height: 2.8rem;
     width: 15rem;
     display: block;
@@ -139,7 +144,7 @@ h1, a, p{
     border: 0.01rem solid rgb(79, 83, 133);
 }
 
-.projects .chckout-btn {
+.projects .chckout-btn, .submit-btn{
     background-color:rgb(79, 83, 133);
 }
 
@@ -147,12 +152,12 @@ h1, a, p{
     background-color:#e67c6a;
 }
 
-.about-me .hire-me-btn:hover, .projects .chckout-btn:hover {
+.about-me .hire-me-btn:hover, .projects .chckout-btn:hover , .submit-btn:hover{
     filter: brightness(0.95);
     
 }
 
-.about-me .hire-me-btn:active, .projects .chckout-btn:active{
+.about-me .hire-me-btn:active, .projects .chckout-btn:active, .submit-btn:active{
     filter: brightness(0.85);
 }
 
@@ -180,10 +185,15 @@ h1, a, p{
     row-gap: 3rem;
 }
 
+.contact-me{
+    background: #fcd7d1;
+    padding: 6rem 15rem;
+}
+
+
 @media only screen and (max-width: 768px) {
 
 .home {
-    margin-top: 3rem;
     margin-bottom: 3rem;
     gap: 1rem;
 }
@@ -195,14 +205,17 @@ h1, a, p{
 .projects{
     grid-template-columns: auto;
 }
+
+.contact-me{
+    padding: 6rem 13rem;
+}
+
 }
 
 @media only screen and (max-width: 720px) {
 
 .home {
     flex-direction: column;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
     gap: 2rem;
 }
 
@@ -215,5 +228,9 @@ h1, a, p{
 
 .years-exp, .degree{
     text-align: center;
+}
+
+.contact-me{
+    padding: 6rem 2rem;
 }
 }
