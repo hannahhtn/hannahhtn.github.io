@@ -12,6 +12,26 @@
     color: #e67c6a;
 }
 
+.fade-in-right{
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+
+.fade-in-left{
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+.fade-in-down {
+    animation: zoomIn;
+    animation-duration: 2s;
+}
+
+.bounce-in-up {
+    animation: bounceInUp;
+    animation-duration: 2s;
+}
+
 nav img{
     width: 5rem;
 }
@@ -22,14 +42,14 @@ nav img{
 }
 
 .navbar-nav li a{
-    margin-right: 2rem;
+    margin-right: 1rem;
     color:rgb(79, 83, 133);
 }
 
 .navbar-nav li a:hover{
     color:#e67c6a;
     animation: headShake;
-    animation-duration: 1s;
+    animation-duration: 2s;
     text-shadow: 0 0 1rem;
 }
 
@@ -45,7 +65,7 @@ a, .intro a, .about-me a,.projects a{
 }
 
 .home {
-    margin-top: 8rem;
+    margin-top: 4rem;
     display: flex;
     gap: 6rem;
     align-items: center;
@@ -55,16 +75,12 @@ a, .intro a, .about-me a,.projects a{
 .profile-pic {
     width: 300px;
     height: 300px;
-    animation: fadeInRight;
-    animation-duration: 2s;
 }
 
 .intro {
     max-width: 25rem;
     padding-left: 1rem; 
     padding-right: 1rem; 
-    animation: fadeInLeft;
-    animation-duration: 2s;
     display: flex;
     flex-direction: column;
 }
@@ -127,8 +143,6 @@ h1, a, p, form{
 .degree p, .years-exp p, .college p{
     margin: 0;
     width: 10rem;
-    animation: fadeInDown;
-    animation-duration: 2s;
 }
 
 .about-me .hire-me-btn, .projects .chckout-btn, .submit-btn{
@@ -194,7 +208,7 @@ h1, a, p, form{
 @media only screen and (max-width: 768px) {
 
 .home {
-    margin-bottom: 3rem;
+    margin-top: 2rem;
     gap: 1rem;
 }
 
@@ -209,7 +223,6 @@ h1, a, p, form{
 .contact-me{
     padding: 6rem 13rem;
 }
-
 }
 
 @media only screen and (max-width: 720px) {
