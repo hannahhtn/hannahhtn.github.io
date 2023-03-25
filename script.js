@@ -43,3 +43,23 @@ myObserver = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll(".card").forEach((skill) => {
 	myObserver.observe(skill);
 });
+
+
+// make Top btn visible on scrolling
+
+const btn = document.getElementById("back-to-top");
+let prev = 0;
+
+let handleBtnOnScroll = (e) => {
+	if(prev > document.documentElement.scrollTop)
+	{
+		if(document.documentElement.scrollTop > 50){
+			btn.style.display = 'block';
+		}else if(document.body.scrollTop <= 50){
+			btn.style.display = 'none';
+		}
+	}
+	prev = document.documentElement.scrollTop;
+}
+
+window.addEventListener("scroll", handleBtnOnScroll)
