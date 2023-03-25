@@ -141,19 +141,19 @@
     <div class="spacer white_pink"></div>
 
     <div class="contact-me" id="contact-me">
-      <form action="mailto:hannahhtn97@gmail.com" method="post" enctype="text/plain">
+      <form action="form_to_mail.php" method="post" enctype="text/plain" name="MyEmailForm">
         <div class="mb-3">
           <label for="fullName" class="form-label">Full name</label>
-          <input type="text" class="form-control" id="fullName" name="Name: " required>
+          <input type="text" class="form-control" id="fullName" name="Name" required>
         </div>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="FromEmail" required>
           <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
           <label for="textArea" class="form-label">Message</label>
-          <textarea class="form-control" id="textArea" rows="3" name="Message: " required></textarea>
+          <textarea class="form-control" id="textArea" rows="3" name="Message" required></textarea>
         </div>
         <button class="submit-btn" type="submit" value="Send">Submit</button>
       </form>
