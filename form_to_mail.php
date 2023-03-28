@@ -1,16 +1,46 @@
 <?php
+//Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require 'vendor/autoload.php';
+
+$env = parse_ini_file('.env');
+
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
+
+try {
+    //Server settings
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = "smtp.gmail.com";                       //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail->Username   = 'hannahhtn97@gmail.com';                //SMTP username
+    $mail->Password   = $env["SCRIPT_PW"];                     //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
     $name = $_POST['Name'];
-    $visitor_email = $_POST['FromEmail'];
+    $email = $_POST['FromEmail'];
     $message = $_POST['Message'];
-    $email_from = 'HH_portfolio';
-	$email_subject = "New Contact submission";
-	$email_body = "You have received a new message from $name.\n Here is the message:\n $message";
+	$subject = "New Contact submission";
 
-    $to = "hannahhtn97@gmail.com";
+    //Recipients
+    $mail->setFrom('hannahhtn97@gmail.com');
+    $mail->addAddress('hannahhtn97@gmail.com');     //Add a recipient
+    $mail->addReplyTo($email, $name);
 
-    $headers = "From: $email_from \r\n";
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = $subject;
+    $mail->Body    = $message;
 
-    $headers .= "Reply-To: $visitor_email \r\n";
-
-    mail($to,$email_subject,$email_body,$headers);
-?>
+    $mail->send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
