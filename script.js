@@ -35,7 +35,7 @@ document.querySelectorAll(".skills").forEach(skill =>{
 myObserver = new IntersectionObserver((entries, observer) => {
 	entries.forEach((entry) => {
 		if (entry.isIntersecting) {
-			entry.target.classList.add("bounce-in-up");
+			entry.target.classList.add("fade-in-right");
 		}
 	});
 });

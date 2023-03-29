@@ -27,11 +27,6 @@
     animation-duration: 2s;
 }
 
-.bounce-in-up {
-    animation: bounceInUp;
-    animation-duration: 2s;
-}
-
 nav img{
     width: 5rem;
 }
