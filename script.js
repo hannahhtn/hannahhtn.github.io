@@ -4,7 +4,8 @@ let myObserver = new IntersectionObserver((entries, observer) => {
 		if (entry.isIntersecting) {
             entry.target.src = "./profile_pic.png";
 			entry.target.classList.add("fade-in-right");
-            observer.unobserve(entry.target);
+			entry.target.classList.remove("invisible");
+			observer.unobserve(entry.target);
 		}
 	});
 });
@@ -14,6 +15,7 @@ myObserver = new IntersectionObserver((entries,observer) => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add("fade-in-left");
+			entry.target.classList.remove("invisible");
             observer.unobserve(entry.target);
         }
     })
@@ -24,6 +26,8 @@ myObserver = new IntersectionObserver((entries, observer) => {
 	entries.forEach((entry) => {
 		if (entry.isIntersecting) {
 			entry.target.classList.add("fade-in-down");
+			entry.target.classList.remove("invisible");
+			observer.unobserve(entry.target);
 		}
 	});
 });
@@ -36,9 +40,11 @@ myObserver = new IntersectionObserver((entries, observer) => {
 	entries.forEach((entry) => {
 		if (entry.isIntersecting) {
 			entry.target.classList.add("fade-in-right");
+			entry.target.classList.remove("invisible");
+			observer.unobserve(entry.target);
 		}
 	});
-});
+}, {root:null, rootMargin:"0px", threshold:0});
 
 document.querySelectorAll(".card").forEach((skill) => {
 	myObserver.observe(skill);
