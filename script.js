@@ -25,7 +25,7 @@ myObserver.observe(document.querySelector(".intro"));
 myObserver = new IntersectionObserver((entries, observer) => {
 	entries.forEach((entry) => {
 		if (entry.isIntersecting) {
-			entry.target.classList.add("fade-in-down");
+			entry.target.classList.add("zoom-in");
 			entry.target.classList.remove("invisible");
 			observer.unobserve(entry.target);
 		}
@@ -36,18 +36,36 @@ document.querySelectorAll(".skills").forEach(skill =>{
     myObserver.observe(skill);
 });
 
+document.querySelector(".list-services").querySelectorAll(':scope > li').forEach((skill) => {
+	myObserver.observe(skill);
+});
+
+// myObserver = new IntersectionObserver((entries, observer) => {
+// 	entries.forEach((entry) => {
+// 		if (entry.isIntersecting) {
+// 			entry.target.classList.add("fade-in-right");
+// 			entry.target.classList.remove("invisible");
+// 			observer.unobserve(entry.target);
+// 		}
+// 	});
+// }, {root:null, rootMargin:"0px", threshold:0});
+
+// document.querySelectorAll(".card").forEach((card) => {
+// 	myObserver.observe(card);
+// });
+
 myObserver = new IntersectionObserver((entries, observer) => {
 	entries.forEach((entry) => {
 		if (entry.isIntersecting) {
-			entry.target.classList.add("fade-in-right");
+			entry.target.classList.add("slide-in-up");
 			entry.target.classList.remove("invisible");
 			observer.unobserve(entry.target);
 		}
 	});
-}, {root:null, rootMargin:"0px", threshold:0});
+});
 
-document.querySelectorAll(".card").forEach((skill) => {
-	myObserver.observe(skill);
+document.querySelectorAll(".card-project").forEach((card) => {
+	myObserver.observe(card);
 });
 
 
