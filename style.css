@@ -20,10 +20,6 @@ body {
 	color: rgb(79, 83, 133);
 }
 
-.blur {
-	opacity: 0.5;
-}
-
 .fade-in-right {
 	animation: fadeInRight;
 	animation-duration: 2s;
@@ -228,10 +224,6 @@ h2,
 	row-gap: 3rem;
 }
 
-.contact-me {
-	padding: 0 30% 6rem 30%;
-}
-
 .form-text p {
 	color: rgba(254, 254, 254, 0.866);
 }
@@ -301,23 +293,23 @@ h2,
 	font-size: 0.8rem;
 }
 
+.contact-me {
+	padding: 0 30% 6rem 30%;
+}
+
 @media only screen and (max-width: 768px) {
 	.home {
 		margin-top: 2rem;
 		gap: 1rem;
 	}
 
-	.projects {
-		grid-template-columns: auto;
-	}
-
-	.contact-me {
-		padding: 0 10% 6rem 10%;
-	}
-
 	.navbar .container-fluid {
 		padding-left: 12px;
 		padding-right: 12px;
+	}
+
+	.projects {
+		grid-template-columns: auto;
 	}
 
 	.info .degree,
@@ -328,6 +320,10 @@ h2,
 
 	.list-services {
 		grid-template-columns: auto auto;
+	}
+
+	.contact-me {
+		padding: 0 10% 6rem 10%;
 	}
 
 	.section-title-about,
@@ -344,6 +340,11 @@ h2,
 		gap: 2rem;
 	}
 
+	.navbar .container-fluid {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
 	.info {
 		display: flex;
 		flex-direction: column;
@@ -354,11 +355,6 @@ h2,
 	.years-exp,
 	.degree {
 		text-align: center;
-	}
-
-	.navbar .container-fluid {
-		padding-left: 12px;
-		padding-right: 12px;
 	}
 
 	.list-services {
