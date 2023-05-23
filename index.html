@@ -42,7 +42,11 @@
 			href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="script.js" type="text/javascript" async></script>
+		<script src="script.js" type="text/javascript" defer></script>
+		<script
+			src="https://kit.fontawesome.com/e7f00daae1.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 
 	<body>
@@ -96,25 +100,31 @@
 						<strong class="blue">offering free services</strong> for
 						<strong class="blue">my very first group of clients</strong>.
 						Checkout some of my projects
-						<a href="#projects"><strong class="blue">here</strong></a> if you're
-						interested, and feel free to
-						<a href="#contact-me"><strong class="blue">contact me</strong></a>
+						<a href="#projects"><strong class="blue highlight">here</strong></a>
+						if you're interested, and feel free to
+						<a href="#contact-me"
+							><strong class="blue highlight">contact me</strong></a
+						>
 						to learn more about my services.
 					</p>
 				</div>
 				<img
-					src=""
-					class="rounded-5 d-block profile-pic invisible"
+					src="profile_pic.png"
+					class="profile-pic rounded-5 d-block invisible"
 					alt="Profile Picture"
 				/>
 			</div>
 
 			<a href="#top"
-				><button class="back-to-top" id="back-to-top">Top</button></a
-			>
+				><button class="back-to-top" id="back-to-top">
+					<i
+						class="fa-solid fa-angle-up fa-xl"
+						style="color: #4f5371"
+					></i></button
+			></a>
 
-			<p class="section-title-about">ABOUT ME</p>
 			<div class="about-me" id="about_me">
+				<p class="section-title-about">ABOUT ME</p>
 				<div class="info">
 					<div class="years-exp skills invisible">
 						<svg
@@ -211,80 +221,84 @@
 					<div class="title">SERVICES</div>
 
 					<ul class="list-services">
-						<li>Website Design</li>
-						<li>Blog Design</li>
+						<li>Porfolio Development</li>
+						<li>Blog Development</li>
 						<li>Website Maintenance</li>
 						<li>Website Improvement</li>
-						<li>Website Medium Package</li>
+						<li>Website Full Package</li>
 					</ul>
 				</div>
 				<button class="hire-me-btn"><a href="#contact-me">Hire Me</a></button>
 			</div>
 
-			<p class="section-title-projects">PROJECTS</p>
-			<div class="projects" id="projects">
-				<a target="_blank" href="https://hannahhtn.github.io/recipe-appp/">
-					<div class="card-project invisible">
-						<img
-							class="image"
-							src="./daily-recipe.png"
-							alt="Daily Recipe app picture"
-						/>
+			<div id="projects">
+				<p class="section-title-projects">PROJECTS</p>
+				<div class="projects">
+					<a target="_blank" href="https://hannahhtn.github.io/recipe-appp/">
+						<div class="card-project invisible">
+							<img
+								class="image"
+								src="./daily-recipe.png"
+								alt="Daily Recipe app picture"
+							/>
 
-						<div class="card-project-body">
-							<h5>Daily Recipe</h5>
-							<p>
-								Daily Recipe uses TheMealBD API to generate randome recipes with
-								pictures, ingredients and instructions. Users can also search
-								for recipes with specific keywords
-							</p>
+							<div class="card-project-body">
+								<h5>Daily Recipe</h5>
+								<p>
+									Daily Recipe uses TheMealBD API to generate randome recipes
+									with pictures, ingredients and instructions. Users can also
+									search for recipes with specific keywords
+								</p>
+							</div>
 						</div>
-					</div>
-				</a>
+					</a>
 
-				<a target="_blank" href="https://hannahhtn.github.io/tipcalculator/">
-					<div class="card-project invisible">
-						<img
-							src="./tip-cal.png"
-							class="image"
-							alt="Tip Calculator app picture"
-						/>
-						<div class="card-project-body">
-							<h5>Tip Calculator</h5>
-							<p>
-								This front-end app calculates the total bill and tip amount for
-								each person in the given group
-							</p>
+					<a target="_blank" href="https://hannahhtn.github.io/tipcalculator/">
+						<div class="card-project invisible">
+							<img
+								src="./tip-cal.png"
+								class="image"
+								alt="Tip Calculator app picture"
+							/>
+							<div class="card-project-body">
+								<h5>Tip Calculator</h5>
+								<p>
+									This front-end app calculates the total bill and tip amount
+									for each person in the given group
+								</p>
+							</div>
 						</div>
-					</div>
-				</a>
+					</a>
 
-				<a target="_blank" href="https://hannahhtn.github.io/todoapp/">
-					<div class="card-project invisible">
-						<img src="./todo-app.png" class="image" alt="To do app picture" />
-						<div class="card-project-body">
-							<h5>To Do List</h5>
-							<p>
-								This front-end app keeps you on track of your goals/daily tasks
-							</p>
+					<a target="_blank" href="https://hannahhtn.github.io/todoapp/">
+						<div class="card-project invisible">
+							<img src="./todo-app.png" class="image" alt="To do app picture" />
+							<div class="card-project-body">
+								<h5>To Do List</h5>
+								<p>
+									This front-end app keeps you on track of your goals/daily
+									tasks
+								</p>
+							</div>
 						</div>
-					</div>
-				</a>
+					</a>
 
-				<a
-					target="_blank"
-					href="https://hannahhtn.github.io/advice-generator-app/"
-				>
-					<div class="card-project invisible">
-						<img src="./advice-generator-app.png" class="image" alt="..." />
-						<div class="card-project-body">
-							<h5>Advice Generator</h5>
-							<p>
-								Looking for some advice? This app uses an API to generate advice
-							</p>
+					<a
+						target="_blank"
+						href="https://hannahhtn.github.io/advice-generator-app/"
+					>
+						<div class="card-project invisible">
+							<img src="./advice-generator-app.png" class="image" alt="..." />
+							<div class="card-project-body">
+								<h5>Advice Generator</h5>
+								<p>
+									Looking for some advice? This app uses an API to generate
+									advice
+								</p>
+							</div>
 						</div>
-					</div>
-				</a>
+					</a>
+				</div>
 			</div>
 
 			<p class="section-title-contact">CONTACT FORM</p>
@@ -331,6 +345,16 @@
 			</div>
 		</main>
 
-		<footer></footer>
+		<footer>
+			<a href="https://github.com/hannahhtn" target="_blank"
+				><i class="fa-brands fa-github fa-2xl" style="color: #4f5385"></i
+			></a>
+			<a href="https://www.linkedin.com/in/hannah-ho-7761a7b4/" target="_blank"
+				><i class="fa-brands fa-linkedin fa-2xl" style="color: #4f5385"></i
+			></a>
+			<a href="mailto: hannahhtn97@gmail.com"
+				><i class="fa-regular fa-envelope fa-2xl" style="color: #4f5385"></i
+			></a>
+		</footer>
 	</body>
 </html>
