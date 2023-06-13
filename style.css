@@ -131,7 +131,7 @@ h2,
 	filter: brightness(2);
 }
 
-.services .title {
+.skillset .title {
 	font-size: 2rem;
 }
 
@@ -180,7 +180,7 @@ h2,
 
 .college,
 .degree,
-.years-exp {
+.years-exp{
 	text-align: center;
 	margin: 0;
 }
@@ -195,6 +195,11 @@ h2,
 .years-exp p,
 .college p {
 	font-size: 1.3rem;
+}
+
+.hire-me-btn{
+	text-align: center;
+	padding-top: 0.5rem;
 }
 
 .about-me .hire-me-btn,
@@ -254,26 +259,33 @@ h2,
 	z-index: 99;
 }
 
-.services {
+.skillset {
 	text-align: center;
+	display: flex;
+	justify-content: space-around;
 }
 
-.list-services {
+.skillset div {
+	width: 20vw;
+}
+
+.list-skillset {
 	padding-left: 0;
 	padding-top: 1rem;
 	padding-bottom: 2rem;
 	list-style: none;
 	display: grid;
-	justify-content: space-evenly;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
 	row-gap: 1rem;
+	justify-items: center;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
-.list-services li {
-	letter-spacing: 0.8px;
+.list-skillset li {
 	font-weight: bolder;
 	border-radius: 10px;
-	padding: 1rem;
+	padding: 0.2rem 0.8rem;
 	color: rgb(79, 83, 133);
 	background-color: #ffe7d956;
 }
@@ -357,11 +369,6 @@ footer i:hover {
 	.info .college {
 		width: 220px;
 	}
-
-	.list-services {
-		grid-template-columns: auto auto;
-	}
-
 	.contact-me {
 		padding: 0 10% 6rem 10%;
 	}
@@ -370,6 +377,29 @@ footer i:hover {
 	.section-title-projects,
 	.section-title-contact {
 		padding-bottom: 5rem;
+	}
+
+	.skillset {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.skillset div {
+		width: 100vw;
+	}
+
+	.list-skillset {
+		grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+		row-gap: 0.5rem;
+		column-gap: 0;
+		justify-items: center;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 1rem;
+	}
+
+	.list-skillset li {
+		padding: 0.5rem 1rem;
 	}
 }
 
@@ -394,9 +424,5 @@ footer i:hover {
 	.years-exp,
 	.degree {
 		text-align: center;
-	}
-
-	.list-services {
-		grid-template-columns: auto;
 	}
 }

@@ -36,9 +36,11 @@ document.querySelectorAll(".skills").forEach(skill =>{
     myObserver.observe(skill);
 });
 
-document.querySelector(".list-services").querySelectorAll(':scope > li').forEach((skill) => {
-	myObserver.observe(skill);
-});
+document
+	.querySelectorAll(".list-skillset")
+	.forEach((skill) => {
+		myObserver.observe(skill);
+	});
 
 // myObserver = new IntersectionObserver((entries, observer) => {
 // 	entries.forEach((entry) => {
