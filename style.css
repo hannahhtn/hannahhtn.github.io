@@ -287,8 +287,8 @@ h2,
 }
 
 .card-project {
-	width: 15rem;
-	height: 15rem;
+	width: 20rem;
+	height: 20rem;
 	position: relative;
 	z-index: 2;
 }
@@ -297,8 +297,8 @@ h2,
 .card-project-body {
 	border-radius: 1rem;
 	position: absolute;
-	width: 15rem;
-	height: 15rem;
+	width: 20rem;
+	height: 20rem;
 	z-index: 2;
 	transition: 0.5s opacity;
 }
