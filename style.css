@@ -6,8 +6,8 @@
 	font-weight: bold;
 }
 
-body {
-	background: url("bckgrd.jpg");
+.body {
+	background-color: rgb(243, 223, 184);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
@@ -58,6 +58,7 @@ nav img {
 }
 
 .navbar .container-fluid {
+	display: flex;
 	padding-left: 10vw;
 	padding-right: 10vw;
 }
@@ -340,10 +341,6 @@ footer i:hover {
 }
 
 @media only screen and (max-width: 768px) {
-	body {
-		background-attachment: scroll;
-		background-size: cover;
-	}
 
 	.home {
 		margin-top: 2rem;
