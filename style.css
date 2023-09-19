@@ -45,6 +45,11 @@
   animation-duration: 2s;
 }
 
+.fade-in-down {
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+
 .zoom-in {
   animation: zoomIn;
   animation-duration: 2s;
