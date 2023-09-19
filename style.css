@@ -1,395 +1,392 @@
+/** @format */
+
 * {
-	margin: 0;
-	padding: 0;
-	color: #e67c6a;
-	font-family: "Quicksand", sans-serif;
-	font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color: #e67c6a;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
 }
 
 .body {
-	background-color: rgb(243, 223, 184);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+  background-color: rgba(37, 35, 32, 0.942);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .bold {
-	font-weight: bolder;
+  font-weight: bolder;
 }
 
 .blue {
-	color: rgb(79, 83, 133);
+  color: rgb(237, 213, 201, 0.774);
 }
 
 .highlight {
-	padding-right: 0.2rem;
-	padding-left: 0.2rem;
-	border-radius: 0.3rem;
-	background: #ffffffab;
-	transition: all 0.3s;
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
+  border-radius: 0.3rem;
+  background: #716d49ab;
+  transition: all 0.3s;
 }
 
 .intro .highlight:hover {
-	color: #fcbc4e;
-	text-shadow: 0 0 0.3rem;
+  color: #fcbc4e;
+  text-shadow: 0 0 0.3rem;
 }
 
 .fade-in-right {
-	animation: fadeInRight;
-	animation-duration: 2s;
+  animation: fadeInRight;
+  animation-duration: 2s;
 }
 
 .fade-in-left {
-	animation: fadeInLeft;
-	animation-duration: 2s;
+  animation: fadeInLeft;
+  animation-duration: 2s;
 }
 
 .zoom-in {
-	animation: zoomIn;
-	animation-duration: 2s;
+  animation: zoomIn;
+  animation-duration: 2s;
 }
 
 .slide-in-up {
-	animation: slideInUp;
-	animation-duration: 2s;
+  animation: slideInUp;
+  animation-duration: 2s;
 }
 
-
 nav img {
-	width: 5rem;
+  width: 5rem;
 }
 
 .navbar .container-fluid {
-	display: flex;
-	padding-left: 10vw;
-	padding-right: 10vw;
+  display: flex;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .navbar-nav {
-	width: 100%;
-	justify-content: end;
+  width: 100%;
+  justify-content: end;
 }
 
 .navbar-nav li a {
-	margin: 1rem;
-	color: rgb(79, 83, 133);
+  margin: 1rem;
+  color: rgba(237, 213, 201, 0.774);
 }
 
 .navbar-nav li a:hover {
-	color: #e67c6a;
-	animation: headShake;
-	animation-duration: 2s;
-	text-shadow: 0 0 1rem;
+  color: #e67c6a;
+  animation: headShake;
+  animation-duration: 2s;
+  text-shadow: 0 0 1rem;
 }
 
-a, .hire-me-btn,
+a,
+.hire-me-btn,
 .intro a,
 .about-me a,
 .projects a {
-	text-decoration: none;
-	color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .intro p a strong:hover {
-	color: #ffffff;
-	animation: headShake;
-	animation-duration: 1s;
-	text-shadow: 0 0 1rem;
+  color: #ffffff;
+  animation: headShake;
+  animation-duration: 1s;
+  text-shadow: 0 0 1rem;
 }
 
 .home {
-	display: flex;
-	gap: 6rem;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-pic {
-	width: 300px;
-	height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 .intro {
-	max-width: 25rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	display: flex;
-	flex-direction: column;
+  max-width: 25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 h2,
 .title {
-	font-family: "Dosis", sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 .home h2,
 .title {
-	filter: brightness(2);
+  filter: brightness(2);
 }
 
 .skillset .title {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 
 .info .title {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .section-title-about,
 .section-title-projects,
 .section-title-contact {
-	font-family: "Dosis", sans-serif;
-	margin: 0;
-	text-align: center;
-	font-size: 3rem;
-	letter-spacing: 0.25rem;
-	font-weight: bold;
-	padding: 2rem 0;
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.25rem;
+  font-weight: bold;
+  padding: 2rem 0;
 }
 
 .intro h1 {
-	font-size: 5rem;
-	font-weight: bold;
-	font-family: "Sono", sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "Sono", sans-serif;
 }
 
 .intro h2 {
-	margin: 0;
-	font-weight: bold;
+  margin: 0;
+  font-weight: bold;
 }
 
 .intro div {
-	display: flex;
-	gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .about-me {
-	overflow: hidden;
+  overflow: hidden;
 }
 
-.home, .about-me, .projects, footer{
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+.home,
+.about-me,
+.projects,
+footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .info {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: flex-start;
-	padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-bottom: 3rem;
 }
 
 .college,
 .degree,
 .years-exp {
-	text-align: center;
-	margin: 0;
+  text-align: center;
+  margin: 0;
 }
 
 .info .degree,
 .info .years-exp,
 .info .college {
-	width: 280px;
+  width: 280px;
 }
 
 .degree p,
 .years-exp p,
 .college p {
-	font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .hire-me-btn {
-	text-align: center;
-	padding-top: 0.5rem;
-	margin-top: 0;
-	margin-bottom: 5rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 5rem;
 }
 
-.about-me .hire-me-btn, .hire-me-btn,
+.about-me .hire-me-btn,
+.hire-me-btn,
 .submit-btn,
 .back-to-top {
-	height: 2.8rem;
-	width: 15rem;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	color: white;
-	border-radius: 2rem;
-	transition: color 0.5s;
-	transition: background-color 0.5s;
-	border: none;
+  height: 2.8rem;
+  width: 15rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  border-radius: 2rem;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+  border: none;
 }
 
-.about-me .hire-me-btn, .hire-me-btn,
+.about-me .hire-me-btn,
+.hire-me-btn,
 .submit-btn {
-	background-color: rgb(79, 83, 133);
+  background-color: rgb(237, 213, 201, 0.774);
 }
 
 .back-to-top {
-	width: 3rem;
-	background-color: white;
-	filter: brightness(1.3);
+  width: 3rem;
+  background-color: white;
+  filter: brightness(1.3);
 }
 
-.about-me .hire-me-btn:hover, .hire-me-btn:hover,
+.about-me .hire-me-btn:hover,
+.hire-me-btn:hover,
 .projects .chckout-btn:hover,
 .submit-btn:hover {
-	filter: brightness(0.95);
+  filter: brightness(0.95);
 }
 
-.about-me .hire-me-btn:active,.hire-me-btn:active,
+.about-me .hire-me-btn:active,
+.hire-me-btn:active,
 .projects .chckout-btn:active,
 .submit-btn:active {
-	filter: brightness(0.85);
+  filter: brightness(0.85);
 }
 
 .projects {
-	display: grid;
-	grid-template-columns: auto auto;
-	justify-content: space-evenly;
-	row-gap: 3rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  row-gap: 5rem;
 }
 
 .form-text p {
-	color: rgba(254, 254, 254, 0.866);
+  color: rgba(254, 254, 254, 0.866);
 }
 
 .back-to-top {
-	display: none;
-	position: fixed;
-	right: 10%;
-	bottom: 2rem;
-	z-index: 99;
+  display: none;
+  position: fixed;
+  right: 10%;
+  bottom: 2rem;
+  z-index: 99;
 }
 
 .skillset {
-	text-align: center;
+  text-align: center;
 }
 
 .list-skillset {
-	list-style: none;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
-	row-gap: 1rem;
-	column-gap: 0.8rem;
-	justify-items: center;
-	align-items: center;
-	justify-content: space-evenly;
-	padding: 1rem;
-	margin: 2rem 5rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+  row-gap: 1rem;
+  column-gap: 0.8rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  margin: 2rem 5rem;
 }
 
 .list-skillset li {
-	font-weight: bolder;
-	border-radius: 10px;
-	padding: 0.5rem 1rem;
-	color: rgb(79, 83, 133);
-	background-color: #ffe7d956;
+  font-weight: bolder;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  color: rgb(237, 213, 201, 0.774);
+  background-color: #ffe7d956;
 }
 
-.card-project {
-	width: 20rem;
-	height: 20rem;
-	position: relative;
-	z-index: 2;
+.projects-card {
+  width: 20rem;
 }
 
-.card-project .image,
-.card-project-body {
-	border-radius: 1rem;
-	position: absolute;
-	width: 20rem;
-	height: 20rem;
-	z-index: 2;
-	transition: 0.5s opacity;
-}
-
-.card-project .image {
-	transition: 0.5s opacity;
-}
-
-.card-project img:hover {
-	opacity: 0;
-}
-
-.card-project-body {
-	padding: 1rem;
-	top: 0;
-	background: white;
-	z-index: 1;
-	font-size: 0.8rem;
+.projects-card h5,
+.projects-card p {
+  color: #4e2803fe;
 }
 
 .contact-me {
-	padding: 0 30% 6rem 30%;
+  padding: 0 30% 6rem 30%;
 }
 
 footer {
-	text-align: center;
-	padding-bottom: 10rem;
+  text-align: center;
+  padding-bottom: 10rem;
 }
 
 footer i {
-	padding-left: 2rem;
-	padding-right: 2rem;
-	transition: all 0.2s ease-in-out;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: all 0.2s ease-in-out;
 }
 
 footer i:hover {
-	text-shadow: 0 0 0.5rem;
-	transform: translate3d(0rem, -0.5rem, 0);
+  text-shadow: 0 0 0.5rem;
+  transform: translate3d(0rem, -0.5rem, 0);
+}
+
+@media only screen and (max-width: 1024px) {
+  .projects {
+    grid-template-columns: auto auto;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .home {
+    margin-top: 2rem;
+    gap: 1rem;
+  }
 
-	.home {
-		margin-top: 2rem;
-		gap: 1rem;
-	}
+  .navbar .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 
-	.navbar .container-fluid {
-		padding-left: 12px;
-		padding-right: 12px;
-	}
+  .navbar-nav li a {
+    margin: 0.5rem;
+  }
 
-	.projects {
-		grid-template-columns: auto;
-	}
+  .projects-card {
+    width: 18rem;
+  }
 
-	.info .degree,
-	.info .years-exp,
-	.info .college {
-		width: 220px;
-	}
-	.contact-me {
-		padding: 0 10% 6rem 10%;
-	}
+  .info .degree,
+  .info .years-exp,
+  .info .college {
+    width: 220px;
+  }
+  .contact-me {
+    padding: 0 10% 6rem 10%;
+  }
 
- .list-skillset {
-	margin: 1rem;
- }
-
+  .list-skillset {
+    margin: 1rem;
+  }
 }
 
 @media only screen and (max-width: 720px) {
-	.home {
-		flex-direction: column;
-		gap: 2rem;
-	}
+  .home {
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-	.navbar .container-fluid {
-		padding-left: 12px;
-		padding-right: 12px;
-	}
+  .navbar .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 
-	.info {
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-		align-items: center;
-	}
+  .projects {
+    grid-template-columns: auto;
+  }
 
-	.years-exp,
-	.degree {
-		text-align: center;
-	}
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .years-exp,
+  .degree {
+    text-align: center;
+  }
 }
