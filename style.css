@@ -329,6 +329,12 @@ footer i:hover {
   transform: translate3d(0rem, -0.5rem, 0);
 }
 
+.card-body-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 1024px) {
   .projects {
     grid-template-columns: auto auto;
